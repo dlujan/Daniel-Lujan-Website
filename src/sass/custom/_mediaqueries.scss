@@ -1,0 +1,117 @@
+/* MEDIA QUERIES */
+@media (min-width: 1350px) {
+    #about .content-container {
+        max-width: 86%;
+    }
+
+    #about img {
+        max-width: 70%;
+    }
+}
+// When it is mobile size (I know, it's backwards)
+@media (max-width: 991px) {
+	#burger-menu {
+		display: block;
+	}
+
+	.link-wrap {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		padding-top: 3em;
+		text-align: center;
+		width: 100vw;
+        height: 100vh;
+        transform: translateY(-100%);
+		z-index: 100;
+		background: #1c1c22;
+		& .close-btn {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-top: 10px;
+			margin-right: 20px;
+			font-size: 2em;
+		}
+    }
+
+	.nav-link {
+		font-size: 2.1em;
+        margin: 30px 0;
+        &:hover {
+            border: none;
+        }
+    }
+    .link-blog {
+        font-size: 1.3em;
+    }
+
+    #social-media {
+        display: none;
+    }
+
+    #about img {
+        width: 40%;
+	}
+	
+	.blog-btn {
+		text-align: center;
+	}
+
+    #development-section {
+        display: initial;
+    }
+
+    #composition-section {
+        display: initial;
+    }
+
+    #portfolio .section-title {
+        width: 100%;
+    }
+
+    #portfolio .project-grid {
+        width: 100%;
+        left: 0;
+    }
+
+    .project-item-caption {
+        opacity: 1;
+    }
+
+    #contact .flex-container {
+        width: 93%;
+    }
+}
+
+@media (max-width: 622px) {
+    .header-introduction h1{
+        font-size: 3em;
+    }
+
+    .header-introduction h3 {
+        font-size: 1.6em;
+    }
+
+    .nav-link {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+
+    #about .content-wrapper {
+        width: 95%;
+    }
+
+    #about img {
+        width: 80%;
+    }
+
+    .logos i {
+        margin: 0 12px;
+    }
+
+    #contact .content-wrapper {
+        width: 99%;
+    }
+}

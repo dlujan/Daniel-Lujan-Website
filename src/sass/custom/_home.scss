@@ -1,0 +1,135 @@
+/* SECTION 1 - HOME */
+#home {
+    position: relative;
+    height: 100vh;
+	color: white;
+	& .background {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+		background: #292C33;
+	}
+	& .content-wrapper {
+		text-align: center;
+	}
+}
+
+.header-introduction {
+	& h1 {
+		font-family: 'Karla', sans-serif;
+		font-size: 6em;
+		color: #f7f7f7;
+		text-transform: uppercase;
+		text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+		letter-spacing: 4px;
+		line-height: 100px;
+		margin-bottom: 30px;
+		font-weight: 900;
+	}
+	& h3 {
+		font-size: 2.7em;
+		font-weight: 600;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+	}
+	& span:nth-of-type(1) {
+		color: $site-green;
+	}
+	& span:nth-of-type(2) {
+		color: $site-blue;
+	}
+}
+
+#burger-menu {
+    z-index: 99;
+	cursor: pointer;
+	display: none;
+}
+
+.line {
+    width: 32px;
+    height: 4px;
+    margin: 5px;
+    background: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+}
+
+#social-media {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    margin-left: 20px;
+	font-size: 22px;
+	& a {
+		text-decoration: none;
+	}
+	& i {
+		color: rgb(28, 28, 34);
+		display: block;
+		margin-bottom: 22px;
+		cursor: pointer;
+		-webkit-transition: all ease 0.2s;
+		-moz-transition: all ease 0.2s;
+		transition: all ease 0.2s;
+	}
+	& i:hover {
+		transform: scale(1.1);
+	}
+}
+
+.icon-color-changed {
+    color: $site-green;
+}
+
+.home-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(28, 28, 34);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.link-wrap {
+    display: block;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	& .close-btn {
+		display: none;
+	}
+}
+
+.nav-link {
+    display: inline;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+	padding-bottom: 5px;
+	& a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.nav-link:hover {
+    color: #57EEA1;
+    border-bottom: 4px solid #57EEA1;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-active {
+    color: #57EEA1;
+    border-bottom: 4px solid #57EEA1;
+}

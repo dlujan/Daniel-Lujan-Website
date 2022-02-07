@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First post!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+    <nav class="blog-nav">
+        <div>
+            <div class="nav-link link-blog">
+                <a class="link" href="/">Home</a>
+            </div>
+            <div class="nav-link link-blog">
+                <a class="link" href="/blog/">Blog</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    
+<main class="post blog-wrapper">
+    <h1>First post! let me introduce myself...</h1>
+<p>June 23, 2020 - Daniel Lujan</p>
+<h2>But first</h2>
+<p>Edit: I've since updated my site to a static site :)</p>
+<p>I FINALLY got a blog added to my website!!! I’m no expert with WordPress and PHP and how everything works on the backend but with a little tinkering I was able to figure out how to edit the files and get them to do what I wanted. Now I have blog version 1.0, something that at least works!</p>
+<p>Anyway here we are! I want to start off by saying that blogging is COMPLETELY new to me. I honestly never thought I was the blogging type and maybe I’m still not… After all, all the writing I’ve ever done has been for papers in school (which I hated!). But I heard somewhere that doing things that make you uncomfortable is good for your growth or something like that… So I guess that’s one reason I’m starting to do this. However, the MAIN reason is that I just want to share my journey as a person trying to break into tech. I read a blog post somewhere recently that was written by a person who just got a job in tech after self-teaching (can’t remember where it was…). But in it they described their journey and the challenges they faced. Honestly that post inspired me to keep going and even more so inspired me to start a blog of my own. If I want this blog to do anything it is to inspire other aspiring developers! So if you’re reading this, Hey, welcome! I’m excited to be sharing my journey with you.</p>
+<h2>A little background</h2>
+<p>I’ve been a musician pretty much all my life. I grew up playing the piano and picked up the violin in middle school. I eventually got into writing music in high school as well. So as it came time go off to college it was kinda a no brainer that I went for music. I started my undergrad at Baylor majoring in Composition and training classically on the violin. Things we going alright…</p>
+<p>Then senior year hits. What am I going to do??? Young ignorant me suddenly became very aware that attaining large amounts of student debt for my composition degree was very…unwise. On top of that, I loved writing music (I still do) but discovered that I didn’t have the passion or consistency to turn it into a career. My situation was very YIKES indeed and was sort of a wake-up call. However, to my great fortune an opportunity opened up for me to pursue a graduate degree in Composition at Baylor. Honestly, I wasn’t feeling like I was composer material, much less grad student material. But the opportunity was there, it was paid for by the school, and it gave me time. So I took it.</p>
+<h2>Code wiggles its way in</h2>
+<p>In the summer of 2018, the year I graduated undergrad, I came up with the idea that I wanted to somehow blend live performance with dynamic game music. That’s the super condensed description of a project I’m still working on and that will have its own future blog posts… Anyway I had this cool idea that I wanted to start working on in my first semester of grad school. Just to skip right to it, my goal is to connect Max/MSP with Unity. Max is a visual programming language/software that lets you do a lot of cool stuff btw. One is display sheet music. Basically I want Unity to control it with in game events! BUT I soon realize that I need to make my own game! And here’s where it happens! I sorta just start figuring things out and writing my own scripts in Unity to control the little puzzle game I’m making. I AM HOOKED! I’m getting into variables and conditionals. I also figure out how to connect the game to Max and, for example, send a number when I touch a pillar in the game. Simple stuff but very immediate and rewarding!! Next thing you know I’m spending hours in the library coding my little project and hacking away at game mechanics and whatnot. Hooked, I say…</p>
+<p>A this point I’m not really having any thoughts about doing this for a career. But I am aware that this is something that I really enjoy. However, during Winter Break I end up sharing a Treehouse account with my roomie and I start learning the basics of HTML and CSS. Honestly I don’t remember what motivated me to do this, because I didn’t have any thoughts of pursuing a career in tech. But I did it anyway and it was my first exposure to those technologies.</p>
+<p>Skip ahead to semester 2 of grad school. I’m still working on this project which has become like my baby. I discover that I can use JavaScript in Max to get even more control over my project. I’m like WHAT!? This means I get to code more! I don’t know JavaScript but I guess it’s time to figure it out! With practical application I begin to learn what arrays are and loops and I start creating even more complex algorithms to fit my needs. One example I’m STILL proud of is a function that takes in a range of measure numbers along with a value that determines how many measures to show at a time. It then cycles through! Oh here it is!</p>
+<pre><code>var collCounter = 1;
+
+function newItem(a,b,c) // can either receive string or two numbers
+{
+    var firstArgument = a; // score# or first mm. of range
+    var secondArgument = b; // last mm. of range
+    var thirdArgument = c; // optional mm. range divider
+
+    outlet(2, collCounter); //output current length so counter object knows how far to count
+
+    if (/[^0-9]/.test(a)) //if there are letters
+    {
+        outlet(0, collCounter, a);
+        outlet(2, collCounter);
+        collCounter++;
+    }
+
+    else if (c&gt;0) // if there are no letters and a c value was inputted
+    {
+        totalLength = (b+1)-a;
+        n = totalLength/c;
+
+        for (i=0; i&lt;n; i++)
+        {
+            outlet(1, collCounter, a, a+(c-1));
+            a+=c;
+            collCounter++;
+        }
+        outlet(2, collCounter-1);
+    }
+
+    else // if there are no letters and no c value was inputted
+    {
+        outlet(1, collCounter, a, b);
+        outlet(2, collCounter);
+        collCounter++;
+    }
+}
+</code></pre>
+<p>Ahh var… But I remember spending 30 minutes with pencil and paper trying to figure this thing out! And when I eventually did, nothing was as satisfying! I want to reiterate that up until this point, besides learning some html and css, ALL the programming I had learned I had done through practical application on something that interested me!! This was SO important in me discovering how much I loved to code.</p>
+<h2>A change of plans</h2>
+<p>I know the previous description of my “project” has been vague but in this post I want to keep the topic on how I got into code. I promise to talk more in-depth about the project itself in the future. But here’s something you can watch to see what it’s about: https://www.youtube.com/watch?v=m-UT41Gtn7c</p>
+<p>Anyway, it’s at this point in my 2nd semester of music grad school that I realize that a career in tech might be a valid path. I start doing more research and discover that I don’t necessarily need to be a computer science wiz/graduate to get a job in tech. I also see the salary potential and I’m really like HMMMM. These debts aren’t gon’ pay themselves baby. So there I am, it’s either March or April of 2019 and I decide, I’m going to do this. At this point I finally feel like I have direction, like I know what I’m going to do with my life. I have a plan. To be perfectly honest with you, this is the first time in my life where I make a decision about my life that is completely my own. Where I take control of it and decide of my own accord that this is what I’m going to do, that this is what I NEED to do. So after the end of the semester (and a very special trip to Kenya ❤️), June 2019 I start Colt Steele’s web development bootcamp on Udemy and I’m off.</p>
+<h2>Closing</h2>
+<p>I’m actually gonna stop there for now because this has gone on longer than I anticipated. In the next post I’ll describe what’s happened between June 2019 and now. But that’s the gist! I’m a musician who fell into code, fell in love with it, and decided to pursue it as a career. If you’ve made it to the end I really appreciate you reading this! This is my first time ever writing like this and all-in-all I’ve really enjoyed it. I hope you’ll tune into my next post. I’m eager to continue sharing my journey with you!</p>
+
+</main>
+    <footer>
+    <div class="logos" style="padding: 20px;">
+        <a href="https://www.linkedin.com/in/daniel-lujan-181631109/" target="_blank"><i class="fab fa-linkedin-in social-icon"></i></a>
+        <a href="https://twitter.com/DanielLujan96" target="_blank"><i class="fab fa-twitter social-icon"></i></a>
+        <a href="mailto:daniel.lujan96@gmail.com"><i class="fas fa-envelope social-icon"></i></a>
+    </div>
+    <div style="padding: 8px;">
+        <p>Copyright Daniel Lujan <script type="text/JavaScript"> document.write(new Date().getFullYear());</script></p>
+    </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

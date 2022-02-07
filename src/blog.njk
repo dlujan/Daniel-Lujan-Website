@@ -1,0 +1,17 @@
+---
+title: Daniel Lujan - Blog
+layout: 'blog.njk'
+---
+<main class="blog-wrapper">
+    <h1>Blog</h1>
+    <ul>
+        {%- for post in collections.post -%}
+            <li>
+                <h3>{{ post.data.title }}</h3>
+                <em>{{ post.data.date | postDate }}</em>
+                <p>{{ post.data.description }}<p>
+                <a href="{{ post.url }}">Continue Reading</a>
+            </li>
+        {%- endfor %}
+    </ul>
+</main>

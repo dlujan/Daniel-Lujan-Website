@@ -1,0 +1,122 @@
+/* SECTION 2 - ABOUT */
+
+#about {
+	color: #2d2d2d;
+	& .background {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		background: #fff;
+	}
+	& .content-wrapper {
+		margin: 0 auto;
+		width: 90%;
+		text-align: center;
+	}
+	& h2 {
+		margin: 55px 0;
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: 600;
+	}
+	& h2:after {
+		content: '';
+		display: block;
+		margin: 20px auto;
+		width: 75px;
+		border-top: 4px solid #171d22;
+	}
+	& .content-container {
+		margin: 20px auto;
+		max-width: 100%;
+	}
+	& .image-container {
+		padding: 0;
+	}
+	& .text-container {
+		font-size: 1.2em;
+		text-align: left;
+		max-width: 95%;
+		margin: 0 auto 2em;
+	}
+	& p {
+		margin-bottom: 1em;
+	}
+	& img {
+		max-width: 82%;
+		height: auto;
+		vertical-align: middle;
+		margin-bottom: 30px;
+		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+	}
+	& .text-container a {
+		position: relative;
+		text-decoration: none;
+		font-size: 1.0em;
+		padding: 10px 30px;
+		color: #f7f7f7;
+		background: rgb(28, 28, 34);
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+		& :hover {
+			background: #292C33;
+		}
+	}
+}
+
+.blog-btn {
+	margin-top: 2em;
+}
+
+#tech-bar {
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+	color: #171d22;
+	& h3:after {
+		content: '';
+		display: block;
+		margin: 20px auto;
+		width: 50px;
+		border-top: 3px solid black;
+	}
+}
+
+.logos {
+    display: block;
+    font-size: 3.5rem;
+	color: rgb(28, 28, 34);
+	& i {
+		margin: 0 15px;
+		-webkit-transition: 0.2s;
+		-moz-transition: 0.2s;
+		transition: 0.2s;
+	}
+}
+
+#html-icon:hover {
+    color: #e34f26;
+    background: #fff;
+}
+
+#css-icon:hover {
+    color: rgb(77, 145, 255);
+    background: #fff;
+}
+
+#js-icon:hover {
+    color: #F0DB4F;
+    background: #fff;
+}
+
+#react-icon:hover {
+    color: #61DBFB;
+    background: #fff;
+}
+
+#git-icon:hover {
+    color: #F1502F;
+    background: #f7f7f7;
+}

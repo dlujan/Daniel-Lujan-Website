@@ -1,0 +1,98 @@
+// Import variables and mixins.
+@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+@import "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+@import "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+@import "utilities/alignments";
+
+p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#site-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+$site-green: #57EEA1;
+$site-blue: #45bafc;
+
+@import "custom/home";
+@import "custom/about";
+@import "custom/portfolio";
+@import "custom/contact";
+@import "custom/blog";
+@import "custom/mediaqueries";
+
+footer {
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    color: #f7f7f7;
+    background: rgb(28, 28, 34);
+}
+
+footer .logos a {
+    margin: 0 10px;
+    padding: 16px 20px;
+    font-size: 1.8rem;
+    color: #f7f7f7;
+    background: #292C33;
+}
+
+footer .logos a:hover {
+    color: #57EEA1;
+}
+
+footer .logos i {
+    margin: 0;
+}
