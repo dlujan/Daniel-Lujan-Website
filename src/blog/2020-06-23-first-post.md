@@ -2,18 +2,14 @@
 title: First post!
 author: Daniel Lujan
 date: 2020-06-23
-description: But first I FINALLY got a blog added to my website!!! I’m no expert with WordPress and PHP and how everything works on the backend but with a little tinkering I was able to figure out how to edit the files and get them to do what I wanted. Now I have blog version 1.0...
+description: This is my very first blog post. I posted this back in 2020 but I've since switched from Wordpress to 11ty for my personal site. In this post I talk about how my background and how I got into coding. Hope you enjoy!
 ---
 
 # First post! let me introduce myself...
 June 23, 2020 - Daniel Lujan
 
 ## But first
-Edit: I've since updated my site to a static site :)
-
-I FINALLY got a blog added to my website!!! I’m no expert with WordPress and PHP and how everything works on the backend but with a little tinkering I was able to figure out how to edit the files and get them to do what I wanted. Now I have blog version 1.0, something that at least works!
-
-Anyway here we are! I want to start off by saying that blogging is COMPLETELY new to me. I honestly never thought I was the blogging type and maybe I’m still not… After all, all the writing I’ve ever done has been for papers in school (which I hated!). But I heard somewhere that doing things that make you uncomfortable is good for your growth or something like that… So I guess that’s one reason I’m starting to do this. However, the MAIN reason is that I just want to share my journey as a person trying to break into tech. I read a blog post somewhere recently that was written by a person who just got a job in tech after self-teaching (can’t remember where it was…). But in it they described their journey and the challenges they faced. Honestly that post inspired me to keep going and even more so inspired me to start a blog of my own. If I want this blog to do anything it is to inspire other aspiring developers! So if you’re reading this, Hey, welcome! I’m excited to be sharing my journey with you.
+Here we are! I want to start off by saying that blogging is COMPLETELY new to me. I honestly never thought I was the blogging type and maybe I’m still not… After all, all the writing I’ve ever done has been for papers in school (which I hated!). But I heard somewhere that doing things that make you uncomfortable is good for your growth or something like that… So I guess that’s one reason I’m starting to do this. However, the MAIN reason is that I just want to share my journey as a person trying to break into tech. I read a blog post somewhere recently that was written by a person who just got a job in tech after self-teaching (can’t remember where it was…). But in it they described their journey and the challenges they faced. Honestly that post inspired me to keep going and even more so inspired me to start a blog of my own. If I want this blog to do anything it is to inspire other aspiring developers! So if you’re reading this, Hey, welcome! I’m excited to be sharing my journey with you.
 
 ## A little background
 I’ve been a musician pretty much all my life. I grew up playing the piano and picked up the violin in middle school. I eventually got into writing music in high school as well. So as it came time go off to college it was kinda a no brainer that I went for music. I started my undergrad at Baylor majoring in Composition and training classically on the violin. Things we going alright…
@@ -77,3 +73,5 @@ Anyway, it’s at this point in my 2nd semester of music grad school that I real
 
 ## Closing
 I’m actually gonna stop there for now because this has gone on longer than I anticipated. In the next post I’ll describe what’s happened between June 2019 and now. But that’s the gist! I’m a musician who fell into code, fell in love with it, and decided to pursue it as a career. If you’ve made it to the end I really appreciate you reading this! This is my first time ever writing like this and all-in-all I’ve really enjoyed it. I hope you’ll tune into my next post. I’m eager to continue sharing my journey with you!
+
+Edit: Hello. 2022 Daniel here. I actually lost my other posts xD. But to give you a basic rundown; I made some projects and got a job as a Frontend Web Developer! WHOO! I stayed at that job from July 2020 to June 2021 before finding my amazing and current job as a Fullstack Web Developer!
