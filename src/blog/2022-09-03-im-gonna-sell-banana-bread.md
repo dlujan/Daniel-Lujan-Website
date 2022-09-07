@@ -6,6 +6,8 @@ description: I'm gonna sell banana bread... Read on to see how!
 ---
 
 # I'm Gonna Sell Banana Bread
+*September 06, 2022 - Daniel Lujan*
+
 That's right. I'm starting a new business venture. I'm selling my banana bread! In this article I'm going to explain my plans, how I'm doing it, and what my goals are. My eventual goal is to be able to look back at each of my steps and compile them into a guide that anyone can follow to in order to recreate what I've done. Let's get bakin'.
 
 ## Step 1 - Have A Great Product
