@@ -1331,11 +1331,6 @@ nav.blog-nav {
   padding: 40px 4%;
   font-size: 1.2em;
 }
-.blog-wrapper > ul li {
-  padding: 2rem;
-  background: #f1f1f1;
-  margin-bottom: 1rem;
-}
 .blog-wrapper h1 {
   padding-top: 4rem;
 }
@@ -1344,6 +1339,20 @@ nav.blog-nav {
   padding-top: 1rem;
 }
 .blog-wrapper p {
+  margin-bottom: 1rem;
+}
+
+.blog-wrapper:not(.post) > ul li {
+  padding: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 1rem;
+}
+.blog-wrapper:not(.post) li::marker {
+  content: "";
+}
+
+.blog-wrapper.post ul {
+  margin-left: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -1359,10 +1368,6 @@ nav.blog-nav {
   margin: 0 auto;
   padding: 2rem;
   border-bottom: 1px solid #eeeeee;
-}
-
-li::marker {
-  content: "";
 }
 
 pre {
