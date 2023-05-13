@@ -3,7 +3,7 @@ const homeOffset = document.getElementById('home').offsetTop - 200,
     aboutOffset = document.getElementById('about').offsetTop - 200,
     portfolioOffset = document.getElementById('portfolio').offsetTop - 200,
     developmentOffset = document.getElementById('development-content').offsetTop,
-    compositionOffset = document.getElementById('composition-content').offsetTop,
+    // compositionOffset = document.getElementById('composition-content').offsetTop,
     contactOffset = document.getElementById('contact').offsetTop - 500;
 
 // Grabbing elements
@@ -58,13 +58,13 @@ window.addEventListener('scroll', () => {
                 devElement.style.top = 'initial';
             }
             // Composition Section
-            if (scrollTop >= compositionOffset) {
-                compElement.style.position = 'fixed';
-                compElement.style.top = '0';
-            } else {
-                compElement.style.position = 'absolute';
-                compElement.style.top = 'initial';
-            }
+            // if (scrollTop >= compositionOffset) {
+            //     compElement.style.position = 'fixed';
+            //     compElement.style.top = '0';
+            // } else {
+            //     compElement.style.position = 'absolute';
+            //     compElement.style.top = 'initial';
+            // }
         } else {
             devElement.style.position = 'relative';
             compElement.style.position = 'relative';

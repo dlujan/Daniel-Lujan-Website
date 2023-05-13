@@ -43,14 +43,17 @@
 	& p {
 		margin-bottom: 1em;
 	}
-	& img {
+	& img.daniel-portrait {
 		max-width: 82%;
 		height: auto;
 		vertical-align: middle;
 		margin-bottom: 30px;
 		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 	}
-	& .text-container a {
+	& a {
+		text-decoration: underline;
+	}
+	& .text-container .blog-btn a {
 		position: relative;
 		text-decoration: none;
 		font-size: 1.0em;
@@ -85,7 +88,9 @@
 }
 
 .logos {
-    display: block;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
     font-size: 3.5rem;
 	color: rgb(28, 28, 34);
 	& i {
@@ -96,27 +101,37 @@
 	}
 }
 
-#html-icon:hover {
+#html-icon {
     color: #e34f26;
     background: #fff;
 }
 
-#css-icon:hover {
+#css-icon {
     color: rgb(77, 145, 255);
     background: #fff;
 }
 
-#js-icon:hover {
-    color: #F0DB4F;
-    background: #fff;
+img.typescript {
+	width: 47px;
+	margin: 0 15px;
 }
 
-#react-icon:hover {
+#react-icon {
     color: #61DBFB;
     background: #fff;
 }
 
-#git-icon:hover {
+#vue-icon {
+    color: #42b883;
+    background: #fff;
+}
+
+#node-icon {
+    color: #43853d;
+    background: #fff;
+}
+
+#git-icon {
     color: #F1502F;
     background: #f7f7f7;
 }

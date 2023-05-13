@@ -10,7 +10,7 @@ layout: 'home.njk'
             <div class="content-wrapper">
                 <div class="header-introduction">
                     <h1>Daniel Lujan</h1>
-                    <h3><span>Software Developer</span></h3>
+                    <h3><span>Full-Stack Software Developer</span></h3>
                 </div>
             </div>
             <div id="social-media">
@@ -54,18 +54,17 @@ layout: 'home.njk'
                 <h2>About</h2>
                 <div class="row content-container">
                     <div class="col-lg-4 image-container">
-                        <img src="/assets/images/me-profile-img.jpg">
+                        <img class="daniel-portrait" src="/assets/images/me-profile-img.jpg">
                     </div>
                     <div class="col-lg-8 text-container">
-                        <p>Hey there! I'm Daniel, a web developer and composer with a passion for creating. 
-                            I'm a graduate of Baylor University where I got my Master's in Music Composition. When I'm not coding or writing music, I enjoy running, baking banana bread, and playing tabletop games with my friends.
+                        <p>Hey there! I'm Daniel, a full-stack software developer with a passion for creating. 
+                            I'm a graduate of Baylor University where I actually got my Master's in Music Composition. If you're interested in hearing how I went from music to tech check out my <a href="blog">blog</a>! When I'm not coding I enjoy staying active, baking banana bread, and playing tabletop games with my friends.
                         </p>
                         <p>I first started coding by making games in Unity and I've never looked back. 
                             I've learned that with code anything is possible and I'm always looking for opportunities to learn more, create something new, 
                             and become a better developer.
                             For me, the fun is in solving difficult problems, building ideas into realities, 
-                            and providing people with something that enhances their lives. Right now I specialize in front end development and can build custom websites with WordPress 
-                            or single-page apps with React.
+                            and providing people with something that enhances their lives. I specialize in full-stack JavaScript development and frequently work with tools such as React, Vue, Node, Nest.js, and PostreSQL.
                         <div class="blog-btn">
                             <a href="blog">Check out my blog!</a>
                         </div>
@@ -76,10 +75,13 @@ layout: 'home.njk'
         <div id="tech-bar">
             <h3>Tech I'm using</h3>
             <div class="logos">
-                <i id="html-icon" class="fab fa-html5"></i>
-                <i id="css-icon" class="fab fa-css3-alt"></i>
-                <i id="js-icon" class="fab fa-js"></i>
-                <i id="react-icon" class="fab fa-react"></i>
+                <i id="html-icon" class="fab fa-html5" alt="HTML icon"></i>
+                <i id="css-icon" class="fab fa-css3-alt" alt="CSS icon"></i>
+                <img class="typescript" src="/assets/images/typescript-icon.svg" alt="TypeScript icon">
+                <i id="react-icon" class="fab fa-react" alt="React.js icon"></i>
+                <i id="vue-icon" class="fab fa-vuejs" class="Vue.js icon"></i>
+                <i id="node-icon" class="fab fa-node-js" alt="Node.js icon"></i>
+                <i id="git-icon" class="fab fa-git-alt" alt="Git icon"></i>
             </div>
         </div>
     </section>
@@ -95,12 +97,12 @@ layout: 'home.njk'
             <div id="development-content" class="project-grid">
                 <div class="flex-container">
                     <div class="project-card">
-                        <div class="project-item dev-bg-1">
+                        <div class="project-item dev-bg-3">
                             <div class="project-item-caption">
                                 <div class="project-item-caption-content">
-                                    <h4>D&D Shops!</h4>
-                                    <p>A web application that organizes Dungeons & Dragons items into shops. Helps DMs easily search for items as well as create custom items. Built with React/Redux and Firebase.</p>
-                                    <a href="https://dnd-shops.web.app" target="_blank"><span>Visit the App</span></a>
+                                    <h4>Coinpurse</h4>
+                                    <p>A bookkeeping web application I created for Lujan Plumbing to help the business keep track of its jobs and income. Built with Nuxtjs and Strapi.</p>
+                                    <a href="https://thecoinpurseapp.com" target="_blank"><span>View</span></a>
                                 </div>
                             </div>
                         </div>
@@ -110,19 +112,8 @@ layout: 'home.njk'
                             <div class="project-item-caption">
                                 <div class="project-item-caption-content">
                                     <h4>Back 2 U</h4>
-                                    <p>Developed a new website for Back 2 U Mobile Chiropractic. Built with WordPress and custom HTML, CSS, and JavaScript.</p>
+                                    <p>Developed a new website for Back 2 U Mobile Chiropractic. Custom built with 11ty static site generator.</p>
                                     <a href="https://back2usa.com" target="_blank"><span>View Website</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-item dev-bg-3">
-                            <div class="project-item-caption">
-                                <div class="project-item-caption-content">
-                                    <h4>Job Tracker</h4>
-                                    <p>A desktop application I created for Lujan Plumbing to help the business keep track of its jobs and income. Built with React and Electron.</p>
-                                    <a href="https://github.com/dlujan/jobtracker" target="_blank"><span>View Code</span></a>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +123,7 @@ layout: 'home.njk'
                             <div class="project-item-caption">
                                 <div class="project-item-caption-content">
                                     <h4>Lujan Plumbing</h4>
-                                    <p>Provided an updated design to the business' website. Built with WordPress and custom HTML, Sass, and JavaScript</p>
+                                    <p>Provided an updated design to the business' website. Custom built with 11ty static site generator.</p>
                                     <a href="https://lujanplumbing.com" target="_blank"><span>View Website</span></a>
                                 </div>
                             </div>
@@ -141,7 +132,7 @@ layout: 'home.njk'
                 </div>
             </div>
         </div>
-        <div id="composition-section">
+        {# <div id="composition-section">
             <div id="composition-title" class="section-title">
                 <div style="text-align: center;">
                     <h2>Music</h2>
@@ -185,7 +176,7 @@ layout: 'home.njk'
                     </div>
                 </div>
             </div>
-        </div>          
+        </div>           #}
     </section>
 
     <!-- CONTACT -->
@@ -194,7 +185,7 @@ layout: 'home.njk'
             <div class="content-wrapper">
                 <h2>Contact</h2>
                 <div class="flex-container">
-                    <p>Need help with a <span>project</span> or <span>website</span>? Interested in my <span>music</span>? 
+                    <p>Need help with a <span>project</span> or just want to <span>connect</span>? 
                         Get in touch, I'd love to chat.</p>
                     <p>You can reach me at <a href="mailto:daniel.lujan96@gmail.com">daniel.lujan96@gmail.com</a> or find me on <a href="https://www.linkedin.com/in/daniel-lujan-181631109/" target="_blank">LinkedIn</a> or <a href="https://twitter.com/DanielLujan96" target="_blank">Twitter</a>.</p>
                 </div>
